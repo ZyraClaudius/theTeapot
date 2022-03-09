@@ -35,7 +35,6 @@ nav ul {
 }
 
 nav li {
-    display: inline;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,6 +72,14 @@ nav a:active {
     color: black;
 }
 
+.logo:hover {
+    color: black;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    box-shadow: none;
+}
+
 .logo img{
     width: 40px;
     height: auto;
@@ -89,15 +96,20 @@ nav h1 {
     }
 }
 
-@media only screen and (max-width: 250px){
-    .nav ul li a{
-        display: none;
-    }
-}
-
 main {
     position: relative;
     top: 77px;
+}
+
+@media only screen and (max-width: 250px){
+    nav a{
+        display: none;
+    }
+
+    main {
+        position: relative;
+        top: 70px;
+    }
 }
 
 .hero {
@@ -187,6 +199,12 @@ footer {
 footer p {
     margin: 10px;
     font-family: sans-serif;
+}
+
+@media only screen and (max-width:487px) {
+    .contact {
+        display: none;
+    }
 }
 
 
