@@ -83,6 +83,18 @@ nav h1 {
     margin: 0 10px;
 }
 
+@media only screen and (max-width: 500px) and (min-width: 250px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 250px){
+    .nav ul li a{
+        display: none;
+    }
+}
+
 main {
     position: relative;
     top: 77px;
@@ -111,12 +123,14 @@ main {
 .whatPics {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .whatPic {
     background-color: black;
     color: white;
-    flex-basis: 500px;
+    flex-basis: 200px;
+    flex-grow: 1;
     padding: 20px;
     border-radius: 5px;
     margin: 10px;
@@ -146,6 +160,18 @@ main {
 
 .whatPic ul {
     text-align: left;
+}
+
+@media only screen and (max-width:780px) {
+    .whatPics {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whatPic {
+        flex-grow: 0;
+        width: 50%;
+    }
 }
 
 footer {
