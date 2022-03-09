@@ -1,0 +1,153 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/*universal styles*/
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(184, 184, 184);
+    height: 200vh;
+    text-align: center;
+}
+
+/*navigation*/
+nav {
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgb(255, 153, 0);
+    opacity: 0.9;
+    position: fixed;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+nav a:hover {
+    color:rgb(255, 153, 0);
+    box-shadow: 2px 2px 2px white;
+    position: relative;
+    right: 2px;
+    bottom: 2px;
+}
+
+nav a:active {
+    position: relative;
+    left: 2px;
+    top: 2px;
+    box-shadow: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    background-color:rgba(255, 153, 0, 0);
+    padding: 0;
+    color: black;
+}
+
+.logo img{
+    width: 40px;
+    height: auto;
+}
+
+nav h1 {
+    font-family: 'Fredoka One', sans-serif;
+    margin: 0 10px;
+}
+
+main {
+    position: relative;
+    top: 77px;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+/*what are we?*/
+
+.what {
+    background-color: rgb(184, 184, 184);
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.what h2 {
+    text-align: center;
+    font-family: 'Fredoka One';
+    margin: 10px;
+    font-size: 3em;
+}
+
+.whatPics {
+    display: flex;
+    justify-content: space-around;
+}
+
+.whatPic {
+    background-color: black;
+    color: white;
+    flex-basis: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 10px 10px 5px rgb(255, 153, 0);
+}
+
+.whatPic img, .whatPic iframe {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(255, 153, 0);
+}
+
+.whatPic h3 {
+    color :rgb(255, 153, 0);
+    font-family: 'Fredoka One';
+    font-weight: normal;
+    font-size: 2em;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.whatPic p {
+    font-weight: 100;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.whatPic ul {
+    text-align: left;
+}
+
+
+
+
