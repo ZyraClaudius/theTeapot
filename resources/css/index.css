@@ -15,7 +15,6 @@ html {
 
 body {
     background-color: rgb(184, 184, 184);
-    height: 200vh;
     text-align: center;
 }
 
@@ -26,7 +25,7 @@ nav {
     background-color: rgb(255, 153, 0);
     opacity: 0.9;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav ul {
@@ -118,6 +117,14 @@ main {
 }
 
 /*what are we?*/
+
+.bitFinder {
+    width: 0;
+    height: 0;
+    position: relative;
+    bottom: 77px;
+    z-index: 1;
+}
 
 .what {
     background-color: rgb(184, 184, 184);
